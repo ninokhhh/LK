@@ -1,0 +1,56 @@
+@use '../variables' as *;
+
+
+.about-section {
+  padding: 4rem 0;
+
+ .about-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; 
+  }
+}
+
+  .about-text {
+    flex: 1;
+
+    .brand {
+      font-family: $font-heading;
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    .subtitle {
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      letter-spacing: 2px;
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      max-width: 400px;
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+  }
+
+  .about-photo {
+    flex: 1;
+
+    img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    }
+  }
+}
